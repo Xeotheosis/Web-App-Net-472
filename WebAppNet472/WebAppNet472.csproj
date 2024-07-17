@@ -1,0 +1,365 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6CEAA19-D6BC-47DD-8B3E-F1978A3F7396}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebAppNet472</RootNamespace>
+    <AssemblyName>WebAppNet472</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44305</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ActualizarePreturiSiCoeficienti.aspx" />
+    <Content Include="AddUser.aspx" />
+    <Content Include="AdminApp.aspx" />
+    <Content Include="AdminAsocDashboard.aspx" />
+    <Content Include="AdminAssociation.aspx" />
+    <Content Include="ApaCalda.aspx" />
+    <Content Include="ApaPluviala.aspx" />
+    <Content Include="ApaRece.aspx" />
+    <Content Include="CalduraApartamente.aspx" />
+    <Content Include="Cheltuieli.aspx" />
+    <Content Include="CheltuieliAdministrative.aspx" />
+    <Content Include="Consumuri.aspx" />
+    <Content Include="Contorizare.aspx" />
+    <Content Include="CurentCasaScarii.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Gaze.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="InitUser.aspx" />
+    <Content Include="Restante.aspx" />
+    <Content Include="Scripts\jscript.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Unauthorized.aspx" />
+    <Content Include="UpdateAssociation.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="ApartmentForm.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualizarePreturiSiCoeficienti.aspx.cs">
+      <DependentUpon>ActualizarePreturiSiCoeficienti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActualizarePreturiSiCoeficienti.aspx.designer.cs">
+      <DependentUpon>ActualizarePreturiSiCoeficienti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminApp.aspx.cs">
+      <DependentUpon>AdminApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminApp.aspx.designer.cs">
+      <DependentUpon>AdminApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAppMaster.Master.cs">
+      <DependentUpon>AdminAppMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminAppMaster.Master.designer.cs">
+      <DependentUpon>AdminAppMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAsocDashboard.aspx.cs">
+      <DependentUpon>AdminAsocDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminAsocDashboard.aspx.designer.cs">
+      <DependentUpon>AdminAsocDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAssociation.aspx.cs">
+      <DependentUpon>AdminAssociation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminAssociation.aspx.designer.cs">
+      <DependentUpon>AdminAssociation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAssociationMaster.Master.cs">
+      <DependentUpon>AdminAssociationMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminAssociationMaster.Master.designer.cs">
+      <DependentUpon>AdminAssociationMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ApaCalda.aspx.cs">
+      <DependentUpon>ApaCalda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApaCalda.aspx.designer.cs">
+      <DependentUpon>ApaCalda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApaPluviala.aspx.cs">
+      <DependentUpon>ApaPluviala.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApaPluviala.aspx.designer.cs">
+      <DependentUpon>ApaPluviala.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApaRece.aspx.cs">
+      <DependentUpon>ApaRece.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApaRece.aspx.designer.cs">
+      <DependentUpon>ApaRece.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalduraApartamente.aspx.cs">
+      <DependentUpon>CalduraApartamente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalduraApartamente.aspx.designer.cs">
+      <DependentUpon>CalduraApartamente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cheltuieli.aspx.cs">
+      <DependentUpon>Cheltuieli.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cheltuieli.aspx.designer.cs">
+      <DependentUpon>Cheltuieli.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cheltuieli.Master.cs">
+      <DependentUpon>Cheltuieli.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cheltuieli.Master.designer.cs">
+      <DependentUpon>Cheltuieli.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CheltuieliAdministrative.aspx.cs">
+      <DependentUpon>CheltuieliAdministrative.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheltuieliAdministrative.aspx.designer.cs">
+      <DependentUpon>CheltuieliAdministrative.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consumuri.aspx.cs">
+      <DependentUpon>Consumuri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consumuri.aspx.designer.cs">
+      <DependentUpon>Consumuri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contorizare.aspx.cs">
+      <DependentUpon>Contorizare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contorizare.aspx.designer.cs">
+      <DependentUpon>Contorizare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CurentCasaScarii.aspx.cs">
+      <DependentUpon>CurentCasaScarii.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CurentCasaScarii.aspx.designer.cs">
+      <DependentUpon>CurentCasaScarii.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gaze.aspx.cs">
+      <DependentUpon>Gaze.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gaze.aspx.designer.cs">
+      <DependentUpon>Gaze.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="InitUser.aspx.cs">
+      <DependentUpon>InitUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InitUser.aspx.designer.cs">
+      <DependentUpon>InitUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restante.aspx.cs">
+      <DependentUpon>Restante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Restante.aspx.designer.cs">
+      <DependentUpon>Restante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TenantMaster.Master.cs">
+      <DependentUpon>TenantMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TenantMaster.Master.designer.cs">
+      <DependentUpon>TenantMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Unauthorized.aspx.cs">
+      <DependentUpon>Unauthorized.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unauthorized.aspx.designer.cs">
+      <DependentUpon>Unauthorized.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApartmentForm.aspx.cs">
+      <DependentUpon>ApartmentForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApartmentForm.aspx.designer.cs">
+      <DependentUpon>ApartmentForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAssociation.aspx.cs">
+      <DependentUpon>UpdateAssociation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateAssociation.aspx.designer.cs">
+      <DependentUpon>UpdateAssociation.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminAppMaster.Master" />
+    <Content Include="AdminAssociationMaster.Master" />
+    <Content Include="Cheltuieli.Master" />
+    <None Include="packages.config" />
+    <Content Include="Site.Master" />
+    <Content Include="TenantMaster.Master" />
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\neanicu.pubxml" />
+    <None Include="Properties\PublishProfiles\neanicu.ro - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\neanicu.ro - Web Deploy1.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BussinesLogic\BussinesLogic.csproj">
+      <Project>{a2b2fd76-261c-4f4a-be15-9b1f4ff0e8e5}</Project>
+      <Name>BussinesLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{013D1C4F-5DED-442C-9430-B543AB7BCEFF}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54280</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44305/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
